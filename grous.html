@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <title>Туры по Грузии</title>
+	 <link rel="stylesheet" type="text/css" href="css/tours.css">
+   <link rel="stylesheet" type="text/css" href="css/animation.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+	<body class="page">
+     <header>
+     	 <div class="header_tours">
+     	  <div class="header_content">
+     	  	<a class="logo" href="#main"><img class="logo_tours"src="img/logo_tours.png"width="168px"height="40px"></a>
+     	  	<nav>
+         <div class="menu-burger__header">
+            <span></span>
+         </div>
+     	  	  <ul class="main_navigation">
+     	  	 	 <li><a href="#main"class="underline-one">Главная</a></li>
+     	  	 	 <li><a href="#about_us_benefits.html"class="underline-one">О нас</a></li>
+     	  	 	 <li><a href="#benefits"class="underline-one">Преимущества</a></li>
+     	  	 	 <li><a href="#tours"class="underline-one">Туры</a></li>
+     	  	 	 <li><a href="#stock"class="underline-one">Акции</a></li>
+     	  	 	 <li><a href="#reviews"class="underline-one">Отзывы</a></li>
+     	  	 	 <li><a href="#form"class="underline-one">Оформление</a></li>
+     	  	 	 <li><a href="#contacts"class="underline-one">Контакты</a></li>
+           </ul>
+        </nav>
+          <p class="text_number"><strong>+7 (987) 023 45 24</strong></p>    
+       </div>
+      </div>
+      <div class="main_screen_div">
+      <h1 class="mainest_text">Гастрономические туры по Грузии</h1>
+      <p class="mainest_description">Скидка <strong>20%</strong> на туры для студентов </p>
+      <button class="main_button"><a href="#tours">Наши туры</a></button>   
+   </div>
+  </header>
+<section class="all_tours_section">
+	<h1 id="tours"class="all_tours_tittle">Наши туры</h1>
+      <!--Здесь указана выборка желаемой суммы тура с помощью кнопки-переключателей -->
+	   <p class="chosing_cost">Выберите желаемую цену тура </p>
+    <div class="myBtnContainer">
+      <button class="btn " onclick="filterSelection('all')"> Показать все</button>
+      <button class="btn active" onclick="filterSelection('Medium')"> Medium</button>
+      <button class="btn" onclick="filterSelection('Budget')"> Бюджетные</button>
+      <button class="btn" onclick="filterSelection('Expensive')"> Expensive</button>
+    </div>
+ <!--Для начала идут средние туры-->
+ <div class="filterDiv Medium show">
+  <h1>Средние туры</h1>
+  <ul class="all_tours_cards"id="tours_medium">
+     <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/тбилиси со вкусом.jpeg"width="330px"height="268px">
+        <div class="our_tours_card_content">  
+         <h4>Тбилиси со вкусом:для молодых пар</h4>
+           <p class="estimation">4,8</p>
+        </div>
+        <div class="tour_information">
+           <p class="time">4 дня</p>
+           <p class="text_information">Романтический город с захватывающим пейзажом. Возможность дегустаций вин и местных сыров. Проведение пикников</p>
+     </div>
+        <div class="costs_tour">
+           <p class="cost">30 550 ₽</p>
+           <p class="people">за человека</p> 
+          <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+     </div>
+     </li>
+     <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/пещерные гора в грузии.jpg"width="320px"height="248px">
+      <div class="our_tours_card_content">  
+          <h4>Захватывающие пещерные гора на Кавказе</h4>
+             <p class="estimation">4,6</p>
+        </div>
+      <div class="tour_information">
+         <p class="time">5 дней</p>
+         <p class="text_information">В этом путешествии Вас ждут удивительной красоты горы Кавказа и знаменитые минеральные источники Боржоми</p>
+     </div>
+       <div class="costs_tour">
+         <p class="cost">35 550 ₽</p>
+         <p class="people">за человека</p>
+       <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+      </div>
+     </li>
+      <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/тбилиси кахети.jpg"width="330px"height="248px">
+       <div class="our_tours_card_content">  
+         <h4>Тбилиси-Кахети-Казбеги-Цхалтубо-Пещеры Прометия</h4>
+          <p class="estimation">4,7</p>
+        </div>
+        <div class="tour_information">
+         <p class="time">5 дней</p>
+         <p class="text_information">Посещение монастыря Джвари, карстовые пещеры Прометея, Жинвальское водохранилище, захватывающие виды</p>
+     </div>
+        <div class="costs_tour">
+         <p class="cost">50 920 ₽</p>
+         <p class="people">за человека</p>
+       <button class="ourtours_button"><a href="#"id="">Выбрать</a></button>
+      </div>
+     </li>
+    </ul>
+ </div>
+    
+    <!--Далее отмечаем для себя дешевые туры-->
+    <div class="filterDiv Budget">
+      <h1>Дешёвые туры</h1>
+    <ul class="all_tours_cards"id="cheep_tours">
+        <li class="alltours">
+          <img class="our_tours_image"src="img/Туры/гамбаржоба грузии.jpg"width="320px"height="248px">
+            <div class="our_tours_card_content">  
+            <h4>Гамбарджоба Грузии для студентов</h4>
+              <p class="estimation">4,6</p>
+            </div>
+            <div class="tour_information">
+              <p class="time">3 дня</p>
+              <p class="text_information">Экскурсии по Грузии-Тбилиси, Батуми и Рустава.Захватывающие виды пейжажей.
+              Возможность воспользоваться промокодом!</p>
+        </div>
+            <div class="costs_tour">
+              <p class="cost">16 550 ₽</p>
+              <p class="people">за человека</p> 
+              <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+        </div>
+        </li>
+        <li class="alltours">
+          <img class="our_tours_image"src="img/Туры/за вкусом в грузию.png"width="320px"height="234px">
+          <div class="our_tours_card_content">  
+              <h4>За неповторимым вкусом в Грузию!</h4>
+                <p class="estimation">4,8</p>
+            </div>
+          <div class="tour_information">
+            <p class="time">3 дня</p>
+            <p class="text_information">Посетите самые деликатесные прилавки в Грузии .Дегустация лучшего грузинского вина.Возможность использования промокода.</p>
+        </div>
+          <div class="costs_tour">
+            <p class="cost">18 550 ₽</p>
+            <p class="people">за человека</p>
+          <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+          </div>
+        </li>
+          <li class="alltours">
+          <img class="our_tours_image"src="img/Туры/ночная грузия.jpg"width="320px"height="248px">
+          <div class="our_tours_card_content">  
+            <h4>Ночная Грузия для молодежи</h4>
+              <p class="estimation">4,8</p>
+            </div>
+            <div class="tour_information">
+            <p class="time">4 дня</p>
+            <p class="text_information">Посетите все клубы и бары Тбилиси. Новые знакомства. Пенная вечеринка. Возможность промокода</p>
+        </div>
+            <div class="costs_tour">
+            <p class="cost">25 550 ₽</p>
+            <p class="people">за человека</p>
+          <button class="ourtours_button"><a href="#"id="">Выбрать</a></button>
+          </div>
+        </li>
+        </ul>
+    </div>
+    
+        <!--Далее отмечаем для себя дорогие туры-->
+    <div class="filterDiv Expensive">
+      <h1>Дорогие туры</h1>
+      <ul class=" all_tours_cards"id="expensive_tours">
+     <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/новогодняя сказка горы и вино.jpg"width="320px"height="248px">
+        <div class="our_tours_card_content">  
+         <h4>Новогодняя сказка: горы и вино</h4>
+        <p class="estimation">4,6</p>
+        </div>
+        <div class="tour_information">
+           <p class="time">3 дня</p>
+           <p class="text_information">Попробуй все виды грузинского вина и ощути изысканный вкус страны вместе с личным гидом и водителем</p>
+     </div>
+        <div class="costs_tour">
+           <p class="cost">50 550 ₽</p>
+           <p class="people">за человека</p> 
+          <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+     </div>
+     </li>
+     <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/индивидуальная перезагрузка.jpg"width="320px"height="234px">
+      <div class="our_tours_card_content">  
+          <h4>Индивидуальная перезагрузка</h4>
+             <p class="estimation">4,8</p>
+        </div>
+      <div class="tour_information">
+         <p class="time">3 дня</p>
+         <p class="text_information">Посети такие популярные города Грузии как Тбилиси, Сванетия и Батуми.Пройди дистанцию горных треков свыше 60км!</p>
+     </div>
+       <div class="costs_tour">
+         <p class="cost">80 550 ₽</p>
+         <p class="people">за человека</p>
+       <button class="ourtours_button"><a href="#"id="open-popup">Выбрать</a></button>
+      </div>
+     </li>
+      <li class="alltours">
+      <img class="our_tours_image"src="img/Туры/по следам древней культуры.jpeg"width="320px"height="248px">
+       <div class="our_tours_card_content">  
+         <h4>По следам древней культуры</h4>
+          <p class="estimation">4,8</p>
+        </div>
+        <div class="tour_information">
+         <p class="time">4 дня</p>
+         <p class="text_information">В нескольких километрах от древней столицы Грузии - город Гори:.Живи в древних поселениях и побывай в прошлом с нами!</p>
+     </div>
+        <div class="costs_tour">
+         <p class="cost">55 920 ₽</p>
+         <p class="people">за человека</p>
+       <button class="ourtours_button"><a href="#"id="">Выбрать</a></button>
+      </div>
+     </li>
+    </ul>
+    </div>    
+  </section>
+ <section id="stock" class="stocks_section">
+   <h1 class="stock_tittle">Акции</h1>
+    <div class="stock_div_information">
+     <article class="stocks_article">
+       <h4 class="stocks_tittle">ТОЛЬКО В ИЮНЕ</h4>
+        <p class="stock_text">Скидка 15% на туры для студентов</p>
+        <p class="stocks_text_2">+Молодежный концерт с звездами Грузии в подарок </p>
+        <!--Анимационный эффект при наведении на картинку-->
+         <div class="hover-text-one">
+           <figure class="effect-text-students">
+             <img class="stock_image" src="img/акции/туры по грузии студенты.png" alt=""/>
+                <figcaption>
+                <h3>Промокод тут</h3>
+                <p class="promocode">6аaGu22</p> 
+               </figcaption>        
+           </figure>
+          </div>  
+       </div>   
+    </article>
+    <div class="stock_div_information">
+     <article class="stocks_article">
+       <h4 class="stocks_tittle">ТОЛЬКО В ИЮНЕ</h4>
+        <p class="stock_text">Скидка 20% на туры для семьи с детьми</p>
+        <p class="stocks_text_2">+Развлекательная детская программа на природе Грузии</p>
+        <!--Анимационный эффект при наведении на картинку-->
+         <div class="hover-text-one">
+           <figure class="effect-text-students">
+             <img class="stock_image"src="img/акции/семья.png" alt=""/>
+                <figcaption>
+                <h3>Промокод тут</h3>
+                <p class="promocode">Ag6ae22</p> 
+               </figcaption>        
+           </figure>
+        </div>    
+      </div>   
+    </article>
+     <div class="stock_div_information_1">
+      <article class="stocks_article">
+       <h4 class="stocks_tittle">ТОЛЬКО В ИЮНЕ</h4>
+        <p class="stock_text">Скидка 10% на туры для молодой пары</p>
+        <p class="stocks_text_2">+Романтический ужин на лучший вид Грузии</p>
+        <!--Анимационный эффект при наведении на картинку-->
+         <div class="hover-text-one">
+           <figure class="effect-text-students">
+             <img class ="stock_image"src="img/акции/молодая пара.png" alt=""/>
+                <figcaption>
+                <h3>Промокод тут</h3>
+                <p class="promocode">GAbayujm</p> 
+               </figcaption>        
+           </figure>
+        </div>      
+      </div>
+    </article>
+</section>
+   <section class="rewievs_section">
+    <h2 id="reviews"  class="rewievs_main_tittle">Отзывы </h2>
+     <div class="rewievs_container">
+      <article class="rewievs_article_1">
+      <img class="image_revievs"src="img/отзывы/1.jpg"width="184">   
+        <h4 class="rewievs_tittle">Алексей Кучерев </h4>
+         <p class="rewievs_text">Посетив свыше 14 популярных стран заявляю-Грузия станет самая запоминающаяся по пейзажу и культуре!</p>
+         <p class="rewievs_text">Мои соц сети</p>
+           <a href="#"><img src="img/telegram.png"class="social_media"></a></li>
+           <a href="#"><img src="img/vk.png"class="social_media"></a></li>
+           <a href="#"><img src="img/whatsapp.png"class="social_media"></a></li>
+     </article>
+        <article class="rewievs_article_2"> 
+            <img class="image_revievs"src="img/отзывы/3.jpg"width="184">
+           <h4 class="rewievs_tittle">Кирилл Сафаров </h4>
+           <p class="rewievs_text">Неповторимая природа, живописные горы, доброжелательные люди, город-красавец Батуми, недорогие цены на жилье.</p>
+           <p class="rewievs_text">Мои соц сети</p>
+           <a href="#"><img src="img/telegram.png"class="social_media"></a>
+           <a href="#"><img src="img/vk.png"class="social_media"></a>
+           <a href="#"><img src="img/whatsapp.png"class="social_media"></a>
+    </article>
+    <article class="rewievs_article_3"> 
+          <img class="image_revievs"src="img/отзывы/2.jpg"width="184">
+           <h4 class="rewievs_tittle">Надежда Новикова </h4>
+           <p class="rewievs_text">Удивительно многообразно, красивейшая природа,исторические места, гостеприимные люди, натуральные продукты.</p>
+           <p class="rewievs_text">Мои соц сети</p>
+           <a href="#"><img src="img/telegram.png"class="social_media"></a>
+           <a href="#"><img src="img/vk.png"class="social_media"></a>
+           <a href="#"><img src="img/whatsapp.png"class="social_media"></a>
+    </article>
+   </div>
+ </section>
+ <section class="form_section">
+   <h2 id="form"class="form_tittle">Оформление тура</h2>
+    <p class="form_text">Отправьте заявку и мы свяжемся с Вами в течении 15 минут!</p>
+     <form class="toursdata__form form" name="toursdata" action="#" method="post">
+      <div class="form__item">
+        <div class="input__wrapper">
+         <input type="text" id="name" name="text" placeholder="Ваше имя" maxlength="30" required>
+         </div>
+        <select id="SelectTours">
+            <option value=”Average”>Тбилиси со вкусом для молодых пар</option>
+            <option value=”Average”>Захватывающие пещерные гора на Кавказе</option>
+            <option value=”Average”>Тбилиси-Кахети-Казбеги-Цхалтубо-Пещеры Прометия</option>
+            <option value=”Expensive”>Новогодняя сказка: 
+            горы и вино
+         </option>
+            <option value=”Expensive”>Индивидуальная перезагрузка</option>
+            <option value=”Expensive”>По следам древней культуры</option> 
+            <option value=”Cheep”>Гамбарджоба Грузии для студентов</option>
+            <option value=”Cheep”>За неповторимым вкусом в Грузию!</option>
+            <option value=”Cheep”>Ночная Грузия для молодежи</option>
+        </select>
+       <input type="number" id="people_counter" name="people_counte"
+       min="0" max="100"placeholder="Количество человек">
+      <input type="number" id="number" name="number" placeholder="Ваше номер телефона" inputmode="decimal" maxlength="30" required>
+     <input type="text" id="name" name="text" placeholder="Ваш e-mail" inputmode="decimal" maxlength="40" required>
+    </div>
+     <button class="form_button"><a href="thank.html">Отправить</a></button> 
+</section>
+  <section class="all_tours_section">
+   <h2 id="contacts" class="rewievs_main_tittle">Контакты</h2>
+    <div class="contacts_information">
+      <div class="number_phone">  
+       <p><img class="addres_img"src="img/контакты/geolocation.png" width="40" height="40"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>    
+       <h2 class="contacts_tittle">Москва,ул Тверская,96А</h2>   
+        <p><img src="img/контакты/phone.png" width="10" height="10"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+          <h5 class="number_phone_2">+7(987)032624</h5>
+            <p><img src="img/контакты/phone.png" width="10" height="10"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+             <h5 class="number_phone_2">+7(987)0321110</h5>
+            <p><img src="img/контакты/phone.png" width="10" height="10"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+            <h5 class="number_phone_2">+7(987)032624</h5>
+            <p><img src="img/контакты/phone.png" width="10" height="10"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+           <h5 class="number_phone_2">+7(987)0321110</h5>
+        </div>
+        <div class="clock_contact">
+          <p><img class="clock_image"src="img/контакты/clock.png" width="40" height="40"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>  
+          <h2 class="contacts_tittle">Режим работы турагенства</h2> 
+           <h5 class="number_phone_2">С 8-00 ДО 22-00 без выходных,без обеда</h5>
+             <a href="#"><img class="image_social"src="img/telegram.png"></a></li>
+             <a href="#"><img class="image_social"src="img/vk.png"></a></li>
+             <a href="#"><img class="image_social"src="img/whatsapp.png"></a></li> 
+       <div class="image_contacts-map">
+        <span></span>
+    </div>
+  </div>
+</div>
+ </form>
+</section>
+</main>
+    <footer class="tours_footer">
+      <ul class="footer_navigation">
+        <section class="footer_menu">
+            <li><a href="#main"class="underline-one">Главная</a></li>
+            <br> 
+             <li><a href="#about_us"class="underline-one">О нас</a></li>  
+               <br>
+             <li><a href="#benefits"class="underline-one">Преимущества</a></li>
+               <br>
+             <li><a href="#tours"class="underline-one">Туры</a></li>
+               <br>
+             <li><a href="#stock"class="underline-one">Акции</a></li>
+               <br>
+          </section>
+          <section class="footer_menu_2">
+             <li><a href="#reviews"class="underline-one">Отзывы</a></li>
+               <br>
+             <li><a href="#contacts"class="underline-one">Контакты</a></li>
+           </ul>
+         </section>
+      <div class="logo_button_footer">
+       <a href="#"><img class="large_logo"src="img/logo_large.png"width="382px"height="90px"></a>
+        </div>
+      <button class="footer_button"> <a href="#form">Оставить заявку</a></button>
+       <section class="footer_contacts">
+         <h5 class="contacts_tittle">Номера по выбору тура</h5>
+           <p><img src="img/контакты/phone.png" width="20" height="20"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+           <h5 class="number_phone_2"> +7 (987) 032 62 41</h5>
+           <p><img src="img/контакты/phone.png" width="20" height="20"alt="Иллюстрация" align="left" vspace="7" hspace="7"></p>   
+           <h5 class="number_phone_2">  +7 (987) 032 11 10</h5>
+</section>
+</footer>
+ </section>
+  </div>
+<div class="popup__bg"id="pop_up">
+  <div class="pop_up_body"id="pop_up_body">
+    <h2 class="form_tittle_1">Оформление тура</h2>
+     <form class="toursdata__form form" name="toursdata" action="#" method="post">
+       <div class="input__pop_up">
+         <input type="text" id="name" name="text" placeholder="Ваше имя" inputmode="decimal" maxlength="30" required>
+       </div>
+       <div class="input__pop_up">
+       <input type="number" id="people_counter" name="people_counte"
+       min="0" max="100"placeholder="*Количество человек">
+     </div>
+      <div class="input__pop_up">
+      <input type="number" id="number" name="number" placeholder="*Ваше номер телефона" inputmode="decimal" maxlength="30" required>
+    </div>
+     <div class="input__pop_up">
+     <input type="text" id="name" name="text" placeholder="*Ваш e-mail" inputmode="decimal" maxlength="30" required>
+   </div>
+   <div class="input__pop_up">
+     <input type="text" id="name" name="text" placeholder="Ваш промокод(при наличии)" inputmode="decimal" maxlength="30" required>
+    </div>
+     <button><a href="thank.html">Отправить</a></button>
+     <div class="pop_up_close"id="pop_up_close">&#10006</div>
+     </form>
+   </div>
+</div>
+<script type="text/javascript" src="js/script.js">
+</script>
+<script>
+  function filterSelection(c) {
+    var x, i;
+    if (c == "all") c = "";
+    x = document.getElementsByClassName("filterDiv");
+    for (i = 0; i < x.length; i++) {
+      RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+    }
+  }
+  
+  function AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Добавила активный класс к текущей кнопке (выделите его)
+ // Получить элемент контейнера
+var btnContainer = document.getElementById("myBtnContainer");
+
+// Сделала все кнопки с class="btn" внутри контейнера
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Выполнила цикл по кнопкам и добавила активный класс к текущей/нажатой кнопке
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // Если нет активного класса я выполняю:
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Добавляю активный класс для текущей/нажатой кнопки
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
